@@ -1,0 +1,68 @@
+# ===== Build output =====
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.log
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== Maven wrapper (giữ lại script, bỏ file tải về) =====
+.mvn/wrapper/maven-wrapper.jar
+
+# ===== Gradle (phòng khi đổi sang Gradle) =====
+.gradle/
+
+# ===== IDE =====
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+.sts4-cache/
+nbproject/
+nbbuild/
+nbdist/
+
+# ===== Bí mật & cấu hình local (KHÔNG BAO GIỜ commit) =====
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-local.properties
+application-secret*.yml
+application-secret*.properties
+*.pem
+*.key
+*.p12
+*.jks
+
+# ===== Docker =====
+docker-compose.override.yml
+mysql-data/
+redis-data/
+data/
+
+# ===== Test / load test output =====
+/coverage/
+/k6-results/
+*.hprof
+
+# ===== Uploads & file tạm =====
+uploads/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
